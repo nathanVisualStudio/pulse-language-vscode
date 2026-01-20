@@ -1,0 +1,26 @@
+{
+  "name": "pulse-language",
+  "displayName": "pulse-language",
+  "description": "Pulse game scripting language support",
+  "version": "0.0.1",
+  "publisher": "Nathan Giunta",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pulse",
+      "aliases": ["Pulse", "pulse"],
+      "extensions": [".ps"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pulse",
+      "scopeName": "source.pulse",
+      "path": "./syntaxes/pulse.tmLanguage.json"
+    }]
+  }
+}
