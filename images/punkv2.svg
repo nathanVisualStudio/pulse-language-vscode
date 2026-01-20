@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <!-- Effet néon doux (moins intense) -->
+    <filter id="softGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Dégradé fond mauve foncé -->
+    <linearGradient id="purpleCyber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#2d1b4e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond sombre mauve -->
+  <rect width="32" height="32" rx="7" fill="url(#purpleCyber)"/>
+  
+  <!-- Bordure mauve néon subtile -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="6" 
+        fill="none" stroke="#b794f4" stroke-width="0.6" opacity="0.5" filter="url(#softGlow)"/>
+  
+  <!-- PS en mauve clair -->
+  <text x="16" y="21" 
+        font-family="'Courier New', 'Consolas', monospace" 
+        font-size="12" 
+        font-weight="bold" 
+        fill="#d6bcfa" 
+        text-anchor="middle"
+        filter="url(#softGlow)">PS</text>
+  
+  <!-- Petit accent en bas (mauve/rose) -->
+  <line x1="10" y1="26" x2="22" y2="26" 
+        stroke="#e9d5ff" stroke-width="1.2" 
+        stroke-linecap="round" opacity="0.4"/>
+</svg>

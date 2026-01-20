@@ -8,6 +8,11 @@
     "name": "Nathan Giunta",
     "url": "https://github.com/nathanVisualStudio"
   },
+  "icon": "images/pulse-logo.png",
+  "galleryBanner": {
+    "color": "#7B1FA2",
+    "theme": "dark"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -35,7 +40,11 @@
       "id": "pulse",
       "aliases": ["Pulse", "pulse"],
       "extensions": [".ps"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./images/punkv2.svg",
+        "dark": "./images/punkv2.svg"
+      }
     }],
     "grammars": [{
       "language": "pulse",
